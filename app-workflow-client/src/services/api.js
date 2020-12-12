@@ -1,0 +1,88 @@
+export default {
+
+  uploadFile: 'POST /file',
+  getFile: '/file',
+
+  getPayTypes: '/payType',
+  savePayType: 'POST /payType',
+  updatePayType: 'PUT /payType',
+  deletePayType: 'DELETE /payType',
+
+  getSteps: '/step',
+  deleteStep: 'DELETE /step',
+  addStep: 'POST /step',
+  updateStep: 'PUT /step',
+
+  getSpecialtys: '/specialty',
+  deleteSpecialty: 'DELETE /specialty',
+  addSpecialty: 'POST /specialty',
+  updateSpecialty: 'PUT /specialty',
+
+  addProject: 'POST /project',
+  getProjects: '/project',
+  getProject: '/project',
+  getProjectByStaff: '/project/byStaff',
+  getProjectsSearchInvoice: '/project/search/invoice',
+  getProjectSearchNameCustomer: '/project/search',
+  getProjectSearchName: '/project/search/projectName',
+  getUnCompletedProjects: '/project/unCompletedProjects',
+  completeSubStep: '/project/completeSubStep',
+  undoSubStep: 'PUT /project/undoSubStep',
+  startProject: 'PUT /project/startProject',
+  toArchive: 'PUT /project/toArchive',
+  deleteProject: 'DELETE /project',
+  getProjectSteps: '/project/projectSteps',
+  getProjectStepStatus: '/project/stepStatus',
+  deleteAttachment: 'DELETE /project/deleteFile',
+  getProjectSearchNameOrCustomerName: '/project/searchCustomerName',
+
+  signUp: 'POST /auth/register',
+  signIn: 'POST /auth/login',
+  userMe: '/user/me',
+
+  editPassword: 'PUT /user/changePassword',
+  editUser: 'PUT /user/edit',
+  editUserOthers: 'PUT /user/edit/others',
+  getRoles: '/role',
+  addUser: 'POST /user',
+  getUsers: '/user',
+  deleteUser: 'DELETE /user',
+
+  editCustomer: 'PUT /customer',
+  deleteCustomer: 'DELETE /customer',
+  addCustomer: 'POST /customer',
+  getCustomers: '/customer',
+  getCustomersSearch: '/customer/search/searchByName',
+
+  addPayment: 'POST /payment',
+  editPayment: 'PUT /payment',
+  updatePayment: 'PUT /payment',
+  savePayment: 'POST /payment',
+  deletePayment: 'DELETE /payment',
+  getPayment: '/payment',
+  getPayments: '/payment',
+
+  editStaff: 'PUT /staff',
+  deleteStaff: 'DELETE /staff',
+  addStaff: 'POST /staff',
+  getStaff: '/staff',
+  getStaffs: '/staff',
+  getStaffSearch: '/staff/byFirstNameOrLastName',
+
+  getDebtClients: '/report/debtClients',
+  getCompletedProjects: '/report/ready',
+  getArchivedProjects: '/report/archived',
+  getPaymentsReport: '/report/payment',
+  getInProgressProjects: '/report/inProgress',
+  getNotCompletedProjects: '/report/inComplete',
+  getOnTimeCompletedProjects: '/report/onTimeComplete',
+  getDebtClientSearch: '/report/debtClients/search',
+
+  downloadCompletedProjects: 'POST /report/excel/completedProjects',
+  downloadDebtClients: 'POST /report/excel/debtClients',
+  downloadPayments: 'POST /report/excel/payments',
+  downloadInProgressProjects: 'POST /report/excel/inProgressProjects',
+  downloadNotCompletedProjects: 'POST /report/excel/notCompletedProjects',
+
+}
+

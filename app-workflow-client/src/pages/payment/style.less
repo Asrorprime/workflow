@@ -1,0 +1,195 @@
+:global {
+  .payment-page {
+    .payment-card {
+      border: 0;
+      border-radius: 3px;
+      box-shadow: 0px 10px 10px #F4F4F4;
+
+      .all-sum {
+        h4 {
+          color: #1890ff;
+
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .sum {
+        border-top: 2px solid #f3f3f3;
+        padding-top: 10px;
+        .ant-col-12:nth-child(1) {
+          p{
+            margin-bottom: 0;
+            font-size: 12px;
+            opacity: 0.6;
+          }
+          h6 {
+            color: rgb(17, 228, 152);
+            margin-bottom: 0;
+            span{
+              font-size: 10px;
+            }
+          }
+        }
+        .ant-col-12:nth-child(2) {
+          p{
+            margin-bottom: 0;
+            font-size: 12px;
+            opacity: 0.6;
+          }
+          h6 {
+            color: #FFD80C;
+            margin-bottom: 0;
+            span{
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+    .table-payment {
+      padding-top: 7px;
+      padding-bottom: 7px;
+      background-color: #1890ff;
+      h5{
+        color: white;
+      }
+    }
+    .table-payment-hover {
+      border-top: 1px solid #f6f6f6;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      transition: 0.7s all ease;
+      &:hover{
+        background-color: #eeeeee;
+      }
+      .icon-plus{
+        cursor: pointer;
+        color: rgb(17, 228, 152);
+        svg{
+          height: 25px;
+          width: 25px;
+        }
+      }
+    }
+  }
+  .switch {
+    height: 30px;
+    background-color: #F8F8FA;
+    border-radius: 3px;
+    border: 0.8px solid #EBEBEB;
+    width: 80%;
+    cursor: pointer;
+    .default-cursor {
+      border-radius: 3px;
+      width: 25px;
+      height: 20px;
+      margin-top: 3px;
+      transform: translateX(10px);
+      position: relative;
+      background-color: #FFFFFF;
+      transition: .4s;
+
+      p {
+        position: absolute;
+        left: 40%;
+        top: 23%;
+        background-color: black;
+        height: 10px;
+        border-radius: 4px;
+        width: 4px;
+      }
+    }
+
+    .active-cursor {
+      background-color: #04A862;
+      box-shadow: 0px 1px 2px #1CCE82;
+      border-radius: 3px;
+      width: 25px;
+      height: 20px;
+      margin-top: 3px;
+      transform: translateX(25px);
+      position: relative;
+      transition: .4s;
+
+      p {
+        position: absolute;
+        left: 40%;
+        top: 23%;
+        background-color: white;
+        height: 10px;
+        border-radius: 4px;
+        width: 4px;
+      }
+    }
+  }
+  .payment-modal{
+    .ant-modal-content{
+      width: 650px;
+      .table-payment {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        background-color: #1890ff;
+        h6{
+          color: white;
+        }
+      }
+      .table-payment-hover {
+        border-top: 1px solid #f6f6f6;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        transition: 0.7s all ease;
+        &:hover{
+          background-color: #eeeeee;
+        }
+        .icon-plus{
+          cursor: pointer;
+          color: rgb(17, 228, 152);
+          svg{
+            height: 25px;
+            width: 25px;
+          }
+        }
+      }
+      .icon-oper{
+        cursor: pointer;
+        color:red;
+        svg{
+          height: 20px;
+          width: 20px;
+        }
+      }
+      .cancel-div,.payment-div{
+        border: 1px solid #cacaca;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .payment-div{
+        color: white;
+        border: 1px solid#1890ff;
+        background-color: #1890ff;
+      }
+    }
+  }
+  @media(max-width: 900px){
+    .payment-page{
+      .table-payment,.table-payment-hover{
+        h5{
+         font-size: 12px;
+        }
+      }
+    }
+  }
+  @media(max-width: 360px){
+    .payment-page{
+      .table-payment,.table-payment-hover{
+        h5{
+          font-size: 8px;
+        }
+      }
+    }
+  }
+}

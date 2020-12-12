@@ -1,0 +1,149 @@
+:global {
+  .orderMain {
+    .orderHeader {
+      background-color: #0c5460;
+      display: grid;
+      grid-template-areas: 'orderName orderBtn seeAll';
+      grid-template-columns: 0.5fr 1fr auto;
+      border-bottom: 2px solid #ececec;
+
+      .orderName {
+        grid-area: orderName;
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      .orderBtn {
+        align-self: center;
+        grid-area: orderBtn;
+
+        Button {
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          background: #11E498;
+          border: 0.5px solid #11E498;
+
+          p {
+            font-size: 20px;
+            margin-left: -6.6px;
+            margin-top: -10.5px;
+          }
+        }
+      }
+
+      .seeAll {
+        grid-area: seeAll;
+        a{
+          color: #1071E3;
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .orderListMain {
+      .mainSearch {
+        border-radius: 4px;
+
+        .search {
+          padding: 8px 0 8px 0;
+         color: #B0B0B0;
+          opacity: 50% !important;
+          width: 100%;
+          background: #FFFFFF;
+          border-radius: 0 !important;
+          border: none !important;
+           font-size: 14px;
+          ::placeholder{
+            opacity: 0.8;
+            color: #B0B0B0;
+          }
+          &:focus {
+            border: none !important;
+            outline: 0;
+            -webkit-appearance: none;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+          }
+        }
+
+        .srch_btn {
+          padding: 10px 26px;
+          width: 20px;
+          background-image: url("/assets/icon/search.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-color: white;
+          border: 2px solid #FFFFFF;
+          border-radius: 0 !important;
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+
+      .orderList {
+        .brandProduct {
+          .round {
+            display: inline-block;
+            background: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            visibility: hidden;
+          }
+
+          .round3 {
+            display: inline-block;
+          }
+        }
+
+        img {
+          visibility: hidden;
+          transform: translate(4px, -4px);
+        }
+
+        &:hover {
+          background: #e0e0e0;
+          .round {
+            visibility: visible;
+          }
+          img {
+            visibility: visible;
+          }
+        }
+
+        .model {
+          float: left;
+        }
+
+        .brand {
+          float: left;
+        }
+
+        .brandProduct {
+          float: left;
+        }
+
+      }
+    }
+  }
+  .persent-project-div,.persent-project-completed{
+    width: 50px;
+    background-color: #ff7d46;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+  .persent-project-completed{
+    background-color: #11e498;
+  }
+
+}
+

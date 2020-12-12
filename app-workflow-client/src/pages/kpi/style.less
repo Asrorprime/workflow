@@ -1,0 +1,49 @@
+:global {
+  .kpi {
+    .all-table-kpi{
+      box-shadow: 0px 10px 10px #F4F4F4;
+    }
+    .table-kpi {
+      padding-top: 7px;
+      padding-bottom: 7px;
+      background-color: #1890ff;
+      h5 {
+        color: white;
+      }
+    }
+
+    .table-kpi-hover {
+      border-top: 1px solid #f6f6f6;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      cursor: pointer;
+      transition: 0.7s all ease;
+      &:hover {
+        background-color: #e2e2e2;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .kpi {
+      .table-kpi {
+        h5 {
+          font-size: 10px;
+          color: white;
+        }
+      }
+
+      .table-kpi-hover {
+        h6 {
+          font-size: 10px;
+        }
+      }
+      .navbar-menu-kpi{
+       .logo{
+         width: 190px;
+       }
+      }
+    }
+  }
+
+}

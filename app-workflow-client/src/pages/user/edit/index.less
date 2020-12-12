@@ -1,0 +1,50 @@
+:global{
+
+  .user_edit {
+    .avatar-uploader{
+      display: flex;
+      margin-bottom: 1rem;
+    }
+    .ant-upload{
+      margin: auto;
+    }
+    .client-photo-upload {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background-color: #eee;
+      background-image: url("/assets/images/icon/user.svg");
+      background-repeat: no-repeat;
+      background-size: 70%;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        label {
+          bottom: -19px;
+        }
+      }
+
+      label {
+        display: block;
+        height: 50%;
+        position: absolute;
+        bottom: -58px;
+        transition:all, 0.4s, linear;
+        left: 0;
+        right: 0;
+        background-image: url("/assets/icon/user.svg");
+        background-repeat: no-repeat;
+        background-position: center 6px;
+        background-color: green;
+        opacity: 0.5;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

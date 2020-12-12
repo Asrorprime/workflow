@@ -1,0 +1,298 @@
+:global {
+  .orderMain {
+    .content {
+      .box {
+        .ant-card-body {
+          padding: 10px;
+          zoom: 1;
+        }
+
+        .card-title {
+          border-top-color: #242424;
+          text-transform: uppercase;
+          text-align: center;
+
+          .card-bage {
+            background-color: #ffffff;
+            color: #242424;
+            border-radius: 5px;
+            border: 0.75px solid rgba(176, 176, 176, 0.5);
+          }
+        }
+
+        .cardBody {
+          .ant-card-body {
+            padding: 0px !important;
+            zoom: 1;
+          }
+
+          .cardContentMain {
+            border-top: 1px solid #242424;
+          }
+
+          .cardContentOneOne {
+            width: 180px;
+          }
+
+          .cardContentOne {
+            border-right: 2px solid #242424;
+
+            .cardContentOneTwo {
+              width: 180px;
+            }
+          }
+
+          .cardContentTwo {
+            border-right: 2px solid #242424;
+          }
+
+          .textOne {
+            text-transform: uppercase;
+            font-size: 11px;
+            font-weight: bold;
+          }
+
+          .textProcent {
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  .rightsitelist {
+    background-color: #f0f2f5;
+
+    h4 {
+      text-align: center;
+      padding-top: 10px;
+    }
+
+    .main-right-div {
+      display: flex;
+      overflow-x: scroll;
+      overflow-y: scroll;
+      height: 80vh;
+
+      .project-green {
+        width: 250px;
+        padding-top: 3px;
+        text-align: center;
+        padding-bottom: 2px;
+        border-top: 3px solid #28ff00;
+        background-color: white;
+      }
+
+      .project-yellow {
+        width: 250px;
+        padding-top: 3px;
+        text-align: center;
+        padding-bottom: 2px;
+        border-top: 3px solid #ffe214;
+        background-color: white;
+      }
+
+      .project-disabled {
+        width: 250px;
+        padding-top: 3px;
+        text-align: center;
+        padding-bottom: 2px;
+        border-top: 3px solid rgba(125, 125, 125, 0.41);
+        background-color: white;
+      }
+
+      .projects, .disabled-project {
+        .ant-card {
+          width: 250px;
+          border: none;
+          position: relative;
+
+          .wall {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(209, 209, 209, 0.46);
+            z-index: 10;
+          }
+
+          .ant-card-body {
+            padding: 12px;
+
+            .client, .client-two {
+              font-size: 14px;
+              color: #1071E3;
+              font-weight: bold;
+              margin-bottom: 0;
+            }
+
+            .client-two {
+              color: rgb(17, 228, 152);
+            }
+
+            .clients-count {
+              font-size: 14px;
+              font-weight: bold;
+              margin-bottom: 0;
+            }
+
+            .accordions-client {
+              margin-top: 10px;
+              position: relative;
+
+              .bordered-accordion:nth-child(1), .bordered-accordion:nth-child(2) {
+                position: absolute;
+                width: 90px;
+                height: 2px;
+                background-color: #e0e0e0;
+              }
+
+              .bordered-accordion:nth-child(2) {
+                left: 59%;
+              }
+
+              .ant-collapse > .ant-collapse-item {
+                border: none;
+              }
+
+              .ant-collapse-content > .ant-collapse-content-box {
+                padding: 10px 0px 0px 0px;
+              }
+
+              .ant-collapse {
+                border: none;
+
+                .ant-collapse-header {
+                  background-color: white;
+                  position: absolute;
+                  left: 40%;
+                  border: none;
+                  padding: 0;
+
+                  svg {
+                    transform: rotate(90deg);
+                  }
+                }
+
+                .ant-collapse-content {
+                  border: none;
+                }
+              }
+
+              .checkCircleOutlined {
+                .checked {
+                  cursor: pointer;
+
+                  svg {
+                    width: 20px;
+                    height: 20px;
+                    color: rgb(17, 228, 152);
+                  }
+                }
+
+                .unchecked {
+                  svg {
+                    width: 20px;
+                    height: 20px;
+
+                  }
+                }
+              }
+            }
+
+            .date-project {
+              .start-date {
+                font-size: 10px;
+                opacity: 0.6;
+                margin-bottom: 0;
+              }
+
+              h6 {
+                font-size: 13px;
+              }
+            }
+
+            .add-progress-project {
+              border-top: 2px solid #e3e3e3;
+
+              .add-file {
+                width: 55px;
+                background-color: #1071E3;
+                cursor: pointer;
+                color: white;
+                border-radius: 3px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                text-align: center;
+              }
+
+              .project-persent {
+                width: 100%;
+                background-color: #ff7d46;
+                color: white;
+                text-align: center;
+                border-radius: 3px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+              }
+            }
+          }
+        }
+      }
+
+      .disabled-project {
+        filter: grayscale(1);
+      }
+    }
+
+    .default-right-item {
+      height: 85vh;
+      overflow-y: scroll;
+    }
+
+    .default-project-col {
+      margin-top: 10px;
+
+      .ant-card {
+        border: none;
+        border-radius: 3px;
+
+        .ant-card-body {
+          padding: 15px;
+        }
+
+        .project-name {
+          text-align: center;
+          padding-bottom: 5px;
+          border-bottom: 2px solid #ededed;
+        }
+      }
+    }
+  }
+
+  .task-col-6-style {
+    min-height: 90vh;
+    background-color: white;
+    margin-top: -16px;
+  }
+
+  @media (max-width: 900px) {
+    .task {
+      .task-col-6-style {
+        min-height: 50vh;
+      }
+    }
+
+    .default-right-item {
+      .default-project-col {
+      margin-left: 0;
+      }
+    }
+  }
+
+
+}

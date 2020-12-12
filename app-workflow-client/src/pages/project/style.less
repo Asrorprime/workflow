@@ -1,0 +1,49 @@
+:global {
+  .project-section {
+    a {
+      text-decoration: none;
+    }
+  }
+  .project-icon{
+  .circle{
+    color: white;
+    text-align: center;
+    height: 25px;
+    width: 25px;
+    background-color: #E9E011;
+    border-radius: 100%;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .delete-circle{
+    background-color: #D0021B;
+  }
+    .icon-plus{
+      background-color: rgb(17, 228, 152);
+      color: white;
+    }
+    .icon-eyes{
+      color: white;
+      background-color: rgb(24, 144, 255);
+    }
+
+  }
+  .table-project{
+    .ant-table-row{
+      td{
+        padding: 14px 5px;
+      }
+    }
+  }
+
+  @media(max-width: 900px){
+    .project-section{
+      .table-project{
+        .ant-table-wrapper{
+          width: 100%;
+          overflow-x: scroll;
+        }
+      }
+    }
+  }
+}

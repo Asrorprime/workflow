@@ -1,0 +1,235 @@
+:global {
+  .project-id-page {
+    padding-bottom: 20px;
+    background-color: #f9f9f9;
+    min-height: 90vh;
+    .project-count-name {
+      margin-top: 20px;
+        background-color: white;
+        box-shadow: 0px 10px 10px #F4F4F4;
+      .header-row{
+        background-color: #1890ff;
+        padding: 12px 0;
+        h6{
+          color: white;
+          margin-bottom: 0;
+        }
+      }
+      .tbody-row{
+        padding: 5px 0;
+      }
+    }
+    .prokect-back{
+      margin-top: 20px;
+      .back-btn{
+        box-shadow: 0px 10px 10px #F4F4F4;
+        background-color: #ff4d4f;
+        border-radius: 3px;
+        color: white;
+        width: 100%;
+        padding: 5px 0;
+        cursor: pointer;
+        text-align: center;
+      }
+    }
+
+    .project-name {
+      width: 97%;
+      padding-top: 3px;
+      text-align: center;
+      padding-bottom: 2px;
+      border-top: 3px solid #28ff00;
+      background-color: white;
+    }
+    .project-green {
+      width: 97%;
+      padding-top: 3px;
+      text-align: center;
+      padding-bottom: 2px;
+      border-top: 3px solid #28ff00;
+      background-color: white;
+    }
+
+    .project-yellow {
+      width: 97%;
+      padding-top: 3px;
+      text-align: center;
+      padding-bottom: 2px;
+      border-top: 3px solid #ffe214;
+      background-color: white;
+    }
+
+    .project-disabled {
+      width: 97%;
+      padding-top: 3px;
+      text-align: center;
+      padding-bottom: 2px;
+      border-top: 3px solid rgba(125, 125, 125, 0.41);
+      background-color: white;
+    }
+
+    .projects {
+      .ant-card {
+        padding-left: 5px;
+        width: 97%;
+        border: none;
+        position: relative;
+        box-shadow: 0px 10px 10px #F4F4F4;
+
+        .ant-card-body {
+          padding: 12px;
+
+          .client, .client-two {
+            font-size: 14px;
+            color: #1071E3;
+            font-weight: bold;
+            margin-bottom: 0;
+          }
+          .client-two {
+            color: rgb(17, 228, 152);
+          }
+          .clients-count {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 0;
+          }
+
+          .accordions-client {
+            margin-top: 10px;
+            position: relative;
+
+            .bordered-accordion:nth-child(1), .bordered-accordion:nth-child(2) {
+              position: absolute;
+              width: 90px;
+              height: 2px;
+              background-color: #e0e0e0;
+            }
+
+            .bordered-accordion:nth-child(2) {
+              left: 59%;
+            }
+
+            .ant-collapse > .ant-collapse-item {
+              border: none;
+            }
+
+            .ant-collapse-content > .ant-collapse-content-box {
+              padding: 10px 0px 0px 0px;
+            }
+
+            .ant-collapse {
+              border: none;
+
+              .ant-collapse-header {
+                background-color: white;
+                position: absolute;
+                left: 40%;
+                border: none;
+                padding: 0;
+
+                svg {
+                  transform: rotate(90deg);
+                }
+              }
+
+              .ant-collapse-content {
+                border: none;
+              }
+            }
+
+            .checkCircleOutlined {
+              .checked {
+                cursor: pointer;
+
+                svg {
+                  width: 20px;
+                  height: 20px;
+                  color: rgb(17, 228, 152);
+                }
+              }
+
+              .unchecked {
+                svg {
+                  width: 20px;
+                  height: 20px;
+
+                }
+              }
+            }
+          }
+
+          .date-project {
+            .start-date {
+              font-size: 10px;
+              opacity: 0.6;
+              margin-bottom: 0;
+            }
+
+            h6 {
+              font-size: 13px;
+            }
+          }
+
+          .add-progress-project {
+            border-top: 2px solid #e3e3e3;
+
+            .add-file {
+              width: 55px;
+              background-color: #1071E3;
+              cursor: pointer;
+              color: white;
+              border-radius: 3px;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              text-align: center;
+            }
+
+            .project-persent {
+              width: 100%;
+              background-color: #ff7d46;
+              color: white;
+              text-align: center;
+              border-radius: 3px;
+              padding-top: 5px;
+              padding-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .about-project{
+      margin-top: 10px;
+      background-color: white;
+      padding: 10px 15px;
+      border-radius: 3px;
+      position: relative;
+      h6{
+        margin-bottom: 0;
+      }
+      span{
+        font-size: 12px;
+      }
+      .col-border-right{
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        top: 0;
+        left: 32%;
+        background-color: #eeeeee;
+      }
+    }
+  }
+
+  @media(max-width: 576px){
+    .project-id-page{
+      .project-count-name{
+        .header-row,.tbody-row{
+          h6{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

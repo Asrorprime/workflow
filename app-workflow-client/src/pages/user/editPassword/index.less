@@ -1,0 +1,72 @@
+:global{
+
+  .user_edit {
+    padding-bottom: 6rem;
+    .header-title2 {
+      font-size: 24px;
+      line-height: 29px;
+    }
+    .icon {
+      display: inline-block;
+      width: 20px;
+      height: 25px;
+      line-height: 24;
+      margin-top: -2px;
+      margin-left: -1px;
+      background-color: #898989;
+      vertical-align: middle;
+      mask-size: 100%;
+      mask-repeat: no-repeat;
+      mask-position: center center;
+      -webkit-mask-size: 100%;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: center center;
+    }
+    .icon-eye {
+      mask-image: url("/assets/icon/eye.svg");
+      -webkit-mask-image: url("/assets/icon/eye.svg");
+    }
+    .icon-eye-off {
+      mask-size: 90%;
+      -webkit-mask-size: 90%;
+      mask-image: url("/assets/icon/eye-off.svg");
+      -webkit-mask-image: url("/assets/icon/eye-off.svg");
+    }
+
+    .label_span{
+      font-size: 16px;
+      margin-right: 1em;
+    }
+    .ant-form-item-control-wrapper{
+      width: 100%;
+    }
+    .ant-form-item{
+      flex-grow: 1;
+    }
+    .save_btn{
+      margin-right: 36px;
+    }
+    .ant-form-explain{
+      position: absolute;
+      left: 40%;
+    }
+    .ant-form-item-with-help{
+      margin-bottom: 0;
+      position: relative;
+    }
+  }
+
+  @media(max-width: 900px){
+    .user_edit{
+      .edit-password-responsive{
+        margin-left: 0!important;
+      }
+      .card{
+        border: none;
+        .icon-eye-off{
+          position: absolute;
+        }
+      }
+    }
+  }
+}

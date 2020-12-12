@@ -1,0 +1,141 @@
+:global {
+  .navbar-menu {
+    border-bottom: 2px solid #E5E5E5;
+
+    .menus {
+      text-align: center;
+      background-color: #f4f4f4;
+      font-size: 14px;
+      width: 180px;
+      padding-top: 20px;
+      height: 62px;
+      cursor: pointer;
+
+      svg {
+        margin-top: -4px;
+        margin-left: 4px;
+      }
+    }
+
+    .logo {
+      width: 80%;
+    }
+
+    .moderator {
+      margin-top: -45px;
+      margin-right: 31px;
+
+      a {
+        color: #bfbfbf;
+
+        :hover {
+          color: #bfbfbf;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .text-catalog-edit {
+    background-color: #f4f4f4;
+    height: 62px;
+    width: 100px;
+    padding-top: 20px;
+    font-size: 14px;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+
+    .ant-dropdown-menu-item {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .navigation-user-edit, .navigation-catalog-edit {
+    span {
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    .ant-dropdown-menu-item {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    .navbar-menu {
+      .text-catalog-edit-responsive, .menus-responsive {
+        display: inline-block;
+      }
+
+      .logo {
+        width: 50%;
+      }
+
+      .menus {
+        font-size: 11px;
+        width: 115px;
+        padding-top: 10px;
+        height: 42px;
+
+        .ant-btn-sm {
+          height: 20px;
+          font-size: 10px;
+        }
+      }
+
+      .text-catalog-edit {
+        display: inline-block;
+        font-size: 11px;
+        width: 115px;
+        padding-top: 12px;
+        height: 42px;
+      }
+
+      .user-info {
+        margin-left: 0;
+
+        .ant-dropdown-trigger {
+          position: absolute;
+          right: 0;
+          top: -45px;
+        }
+      }
+    }
+  }
+  @media (max-width: 992px) and (min-width:767px ) {
+    .navbar-menu {
+      .user-info {
+        .ant-dropdown-trigger {
+          position: absolute;
+          right: 0;
+          top: 0px;
+        }
+      }
+
+    }
+  }
+  @media (max-width: 576px){
+    .navbar-menu {
+      .user-info {
+        .ant-dropdown-trigger {
+          position: relative;
+          top: 0;
+
+        }
+      }
+
+    }
+  }
+}

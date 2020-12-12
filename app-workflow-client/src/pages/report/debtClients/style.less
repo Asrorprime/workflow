@@ -1,0 +1,49 @@
+:global {
+  @media (max-width: 900px) and (min-width: 576px) {
+    .report {
+      .debClients-table,.payments-table-responsive,
+      .inProgressProject-responsive,.completedProject-responsive{
+          th,td{
+            padding: 3px !important;
+            font-size: 11px !important;
+          }
+      }
+      .about-report-responsive{
+        font-size: 18px;
+      }
+    }
+    .ant-layout-sider-collapsed
+    .ant-layout-sider-below .ant-layout-sider-zero-width{
+      z-index: 0;
+      position: relative;
+    }
+    .ant-layout-sider-below{
+      z-index: 1;
+      position: absolute;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .report {
+      .debClients-table,.payments-table-responsive,
+      .inProgressProject-responsive,.completedProject-responsive{
+        th,td{
+          padding: 2px !important;
+          font-size: 9px !important;
+        }
+      }
+      .about-report-responsive{
+        font-size: 18px;
+      }
+    }
+    .ant-layout-sider-collapsed
+    .ant-layout-sider-below .ant-layout-sider-zero-width{
+      z-index: 0;
+      position: relative;
+    }
+    .ant-layout-sider-below{
+      z-index: 1;
+      position: absolute;
+    }
+  }
+
+}
